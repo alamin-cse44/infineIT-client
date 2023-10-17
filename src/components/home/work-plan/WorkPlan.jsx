@@ -1,4 +1,4 @@
-import './WorkPlan.scss'
+
 import workPlanImg from '../../../assets/images/workPlan.svg'
 
 const WorkPlan = () => {
