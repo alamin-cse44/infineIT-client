@@ -1,10 +1,12 @@
 
 import workPlanImg from '../../../assets/images/workPlan.svg'
+import Headings from '../../../common/Headings'
 
 const WorkPlan = () => {
   return (
-    <div className="mx-5 flex justify-center">
-      <img src={workPlanImg} alt="" />
+    <div className="mx-5 flex flex-col justify-center">
+      <Headings heading="how we work" blurHeading="how we work"/>
+      <img className='mt-12' src={workPlanImg} alt="" />
     </div>
   )
 }

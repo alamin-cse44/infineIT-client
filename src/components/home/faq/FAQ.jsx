@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa";
 import "./FAQ.scss";
+import Headings from "../../../common/Headings";
 
 const FAQ = () => {
   const [show, setShow] = useState("one");
@@ -10,7 +11,7 @@ const FAQ = () => {
 
   return (
     <div className="mb-10 lg:mx-[140px] mx-5 mt-[170px]">
-      <h2 className="text-center">FAQ section</h2>
+      <Headings heading="FREQUENTLY ASKED QUESTIONS" blurHeading="FREQUENTLY ASKED QUESTIONS"/>
 
       <div className="flex flex-col gap-10 mt-12">
         <div className="faq-box p-10">

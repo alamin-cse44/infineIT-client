@@ -4,13 +4,14 @@ import phoneIcon from "../../../assets/icons/phoneIcon.svg";
 import emailIcon from "../../../assets/icons/emailIcon.svg";
 
 import "./Contact.scss";
+import Headings from "../../../common/Headings";
 
 const Contact = () => {
   return (
-    <div className="mx-5">
-      <h2>contact page</h2>
+    <div className="mx-5 mt-[71px]">
+      <Headings heading="Let’s Have a Coffe" blurHeading="CONTACT"/>
       <div className="hero min-h-screen">
-        <div className="hero-content flex-col gap-[50px] lg:flex-row-reverse">
+        <div className="hero-content flex-col mt-12 gap-[50px] lg:flex-row-reverse">
           <img src={contactImg} className="w-[560px]" />
 
           <div className="card lg:w-[600px] w-[100%]">
