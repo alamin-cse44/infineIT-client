@@ -11,7 +11,7 @@ const Services = () => {
         <div className="hero-content flex-col lg:flex-row">
           <img src={illustrationImg} className="w-[900px]" alt="" />
           <div>
-            <h1 className="lg:text-5xl font-bold mb-10">What We Do?</h1>
+            <h1 className="lg:text-6xl font-bold mb-10 text-[#0D71BA]">What We Do?</h1>
             <ServicesShow
               img={mobileAppIcon}
               title="Mobile Application"
