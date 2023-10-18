@@ -1,3 +1,4 @@
+import Contact from "./contact/Contact";
 import FAQ from "./faq/FAQ";
 import Header from "./header/header";
 import Services from "./services/Services";
@@ -7,10 +8,11 @@ const Home = () => {
   return (
     <div>
       {/* <Header></Header> */}
-      <div className="mx-[20px]">
+      <div className="lg:mx-[100px]">
         <Services />
         <WorkPlan />
         <FAQ />
+        <Contact />
       </div>
     </div>
   );

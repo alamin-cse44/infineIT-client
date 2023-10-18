@@ -9,7 +9,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="mb-10 lg:mx-[240px] mt-[170px]">
+    <div className="mb-10 lg:mx-[140px] mx-5 mt-[170px]">
       <h2 className="text-center">FAQ section</h2>
 
       <div className="flex flex-col gap-10 mt-12">
