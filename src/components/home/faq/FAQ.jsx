@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa";
-import "./FAQ.scss";
 import Headings from "../../../common/Headings";
+
+import "./FAQ.scss";
 
 const FAQ = () => {
   const [show, setShow] = useState("one");

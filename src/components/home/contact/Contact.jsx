@@ -3,8 +3,9 @@ import nameIcon from "../../../assets/icons/nameIcon.svg";
 import phoneIcon from "../../../assets/icons/phoneIcon.svg";
 import emailIcon from "../../../assets/icons/emailIcon.svg";
 
-import "./Contact.scss";
 import Headings from "../../../common/Headings";
+
+import "./Contact.scss";
 
 const Contact = () => {
   return (
@@ -14,12 +15,12 @@ const Contact = () => {
         <div className="hero-content flex-col mt-12 gap-[50px] lg:flex-row-reverse">
           <img src={contactImg} className="w-[560px]" />
 
-          <div className="card lg:w-[600px] w-[100%]">
+          <div className="card lg:w-[600px]">
             <form className="card-body">
               <h1 className="card-form-title lg:text-4xl">LET'S HAVE A COFFEE</h1>
               <div className="form-control">
                 <label className="label mt-5">
-                  <span className="label-text">full name</span>
+                  <span className="label-text lg:text-lg text-xs">full name</span>
                 </label>
                 <div className="flex gap-2 card-name-field">
                   <img src={nameIcon} alt="" />
@@ -30,7 +31,7 @@ const Contact = () => {
               <div className="flex items-center gap-8 mt-5">
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Phone Number</span>
+                    <span className="lg:text-lg text-xs">Phone Number</span>
                   </label>
                   <div className="flex gap-2 card-name-field">
                     <img src={phoneIcon} alt="" />
@@ -40,7 +41,7 @@ const Contact = () => {
 
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Email</span>
+                    <span className="lg:text-lg text-xs">Email</span>
                   </label>
                   <div className="flex gap-2 card-name-field">
                     <img src={emailIcon} alt="" />
@@ -51,7 +52,7 @@ const Contact = () => {
 
               <div className="form-control">
                 <label className="label mt-5">
-                  <span className="label-text">select option</span>
+                  <span className="lg:text-lg text-xs">select option</span>
                 </label>
                 <div className="flex items-center gap-5 mt-3">
                   <div className="flex gap-2">
@@ -91,7 +92,7 @@ const Contact = () => {
 
               <div className="form-control mt-5">
                 <label className="label">
-                  <span className="label-text">Subject</span>
+                  <span className="lg:text-lg text-xs">Subject</span>
                 </label>
                 <div className="flex gap-2 card-name-field">
                   <input type="name" placeholder="Subject" required />
@@ -100,7 +101,7 @@ const Contact = () => {
 
               <div className="form-control mt-5">
                 <label className="label">
-                  <span className="label-text">Enter your message</span>
+                  <span className="lg:text-lg text-xs">Enter your message</span>
                 </label>
                 <div className="flex gap-2 card-name-field">
                   <textarea
