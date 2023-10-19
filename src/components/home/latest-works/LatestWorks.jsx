@@ -11,7 +11,7 @@ import slider3 from "../../../assets/images/slider3.svg";
 
 import Headings from "../../../common/Headings";
 
-import './LatestWorks.scss';
+import "./LatestWorks.scss";
 
 const LatestWorks = () => {
   return (
@@ -20,8 +20,10 @@ const LatestWorks = () => {
         heading="SOME OF OUR LATEST WORKS"
         blurHeading="SOME OF OUR LATEST WORKS"
       />
-      <div className="hidden display-img"><img src={latestWork} alt="" /></div>
-      <div className="display-slide">
+      <div className="lg:hidden display-img">
+        <img src={latestWork} alt="" />
+      </div>
+      <div className="display-slide hidden lg:block">
         <Swiper
           slidesPerView={3.5}
           spaceBetween={30}
@@ -78,6 +80,18 @@ const LatestWorks = () => {
             }
           >
             <img src={slider1} alt="" />
+          </SwiperSlide>
+          <SwiperSlide
+            style={
+              {
+                // height: "550px",
+                // bgcolor: "#202327",
+                // display: "flex",
+                // justifyContent: "center",
+              }
+            }
+          >
+            <img src={slider2} alt="" />
           </SwiperSlide>
         </Swiper>
       </div>

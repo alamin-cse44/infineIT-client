@@ -11,7 +11,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="mb-10 lg:mx-[140px] mx-5 mt-[170px]">
+    <div className="lg:mx-[140px] mx-5 lg:mt-[170px]">
       <Headings heading="FREQUENTLY ASKED QUESTIONS" blurHeading="FREQUENTLY ASKED QUESTIONS"/>
 
       <div className="flex flex-col gap-10 mt-12">
