@@ -1,0 +1,39 @@
+.infine-it {
+  h2 {
+    color: var(--11-text-color-light-01-text-primary, #212b36);
+    font-family: Bebas Neue;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+  a {
+    display: block;
+    color: var(--11-text-color-light-01-text-primary, #212b36);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+
+  &-text {
+    color: var(--11-text-color-light-01-text-primary, #212b36);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; 
+  }
+
+  &-copyright {
+    color: var(--11-text-color-light-01-text-primary, #212b36);
+    font-family: Public Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+}

@@ -1,5 +1,6 @@
 import Contact from "./contact/Contact";
 import FAQ from "./faq/FAQ";
+import Footer from "./footer/Footer";
 import Header from "./header/header";
 import Services from "./services/Services";
 import WorkPlan from "./work-plan/WorkPlan";
@@ -13,6 +14,10 @@ const Home = () => {
         <WorkPlan />
         <FAQ />
         <Contact />
+      </div>
+      <div className="divider lg:mt-[430px]"></div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

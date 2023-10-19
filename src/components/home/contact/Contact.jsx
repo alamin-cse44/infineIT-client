@@ -27,7 +27,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="flex gap-8 mt-5">
+              <div className="flex items-center gap-8 mt-5">
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text">Phone Number</span>
@@ -53,7 +53,7 @@ const Contact = () => {
                 <label className="label mt-5">
                   <span className="label-text">select option</span>
                 </label>
-                <div className="flex gap-5">
+                <div className="flex items-center gap-5 mt-3">
                   <div className="flex gap-2">
                     <input
                       type="checkbox"
