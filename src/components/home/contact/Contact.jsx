@@ -10,17 +10,21 @@ import "./Contact.scss";
 const Contact = () => {
   return (
     <div className="mx-5 mt-[71px]">
-      <Headings heading="Let’s Have a Coffe" blurHeading="CONTACT"/>
+      <Headings heading="Let’s Have a Coffe" blurHeading="CONTACT" />
       <div className="hero min-h-screen">
         <div className="hero-content flex-col mt-12 gap-[50px] lg:flex-row-reverse">
           <img src={contactImg} className="w-[560px]" />
 
           <div className="card lg:w-[600px]">
             <form className="card-body">
-              <h1 className="card-form-title lg:text-4xl">LET'S HAVE A COFFEE</h1>
+              <h1 className="card-form-title lg:text-4xl">
+                LET'S HAVE A COFFEE
+              </h1>
               <div className="form-control">
                 <label className="label mt-5">
-                  <span className="label-text lg:text-lg text-xs">full name</span>
+                  <span className="label-text lg:text-lg text-xs">
+                    full name
+                  </span>
                 </label>
                 <div className="flex gap-2 card-name-field">
                   <img src={nameIcon} alt="" />
@@ -28,10 +32,10 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-8 mt-5">
+              <div className="flex items-center lg:gap-7 gap-4 mt-5">
                 <div className="form-control">
                   <label className="label">
-                    <span className="lg:text-lg text-xs">Phone Number</span>
+                    <span className="lg:text-lg text-[10px]">Phone Number</span>
                   </label>
                   <div className="flex gap-2 card-name-field">
                     <img src={phoneIcon} alt="" />
@@ -41,7 +45,7 @@ const Contact = () => {
 
                 <div className="form-control">
                   <label className="label">
-                    <span className="lg:text-lg text-xs">Email</span>
+                    <span className="lg:text-lg text-[10px]">Email</span>
                   </label>
                   <div className="flex gap-2 card-name-field">
                     <img src={emailIcon} alt="" />
@@ -54,14 +58,16 @@ const Contact = () => {
                 <label className="label mt-5">
                   <span className="lg:text-lg text-xs">select option</span>
                 </label>
-                <div className="flex items-center gap-5 mt-3">
-                  <div className="flex gap-2">
+                <div className="flex lg:gap-5 gap-2 mt-3">
+                  <div className="flex items-center gap-2">
                     <input
                       type="checkbox"
                       checked=""
                       className="card-checkbox"
                     />
-                    <span className="card-checkbox-text">Website</span>
+                    <span className="card-checkbox-text lg:text-sm text-[10px]">
+                      Website
+                    </span>
                   </div>
                   <div className="flex gap-2">
                     <input
@@ -69,7 +75,9 @@ const Contact = () => {
                       checked=""
                       className="card-checkbox"
                     />
-                    <span className="card-checkbox-text">Mobile App</span>
+                    <span className="card-checkbox-text lg:text-sm text-[10px]">
+                      Mobile App
+                    </span>
                   </div>
                   <div className="flex gap-2">
                     <input
@@ -77,7 +85,9 @@ const Contact = () => {
                       checked=""
                       className="card-checkbox"
                     />
-                    <span className="card-checkbox-text">Design</span>
+                    <span className="card-checkbox-text lg:text-sm text-[10px]">
+                      Design
+                    </span>
                   </div>
                   <div className="flex gap-2">
                     <input
@@ -85,7 +95,9 @@ const Contact = () => {
                       checked=""
                       className="card-checkbox"
                     />
-                    <span className="card-checkbox-text">Others</span>
+                    <span className="card-checkbox-text lg:text-sm text-[10px]">
+                      Others
+                    </span>
                   </div>
                 </div>
               </div>
