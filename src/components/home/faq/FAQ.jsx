@@ -12,12 +12,15 @@ const FAQ = () => {
 
   return (
     <div className="lg:mx-[140px] mx-5 lg:mt-[170px]">
-      <Headings heading="FREQUENTLY ASKED QUESTIONS" blurHeading="FREQUENTLY ASKED QUESTIONS"/>
+      <Headings
+        heading="FREQUENTLY ASKED QUESTIONS"
+        blurHeading="FREQUENTLY ASKED QUESTIONS"
+      />
 
       <div className="flex flex-col gap-10 mt-12">
-        <div className="faq-box p-10">
+        <div className="faq-box lg:px-10 lg:py-8 p-4">
           <div className="flex justify-between">
-            <h2 className="faq-box-title lg:text-2xl">
+            <h2 className="faq-box-title lg:text-2xl text-xs">
               WHO is Infine it Solution ?
             </h2>
             {show === "one" ? (
@@ -30,7 +33,7 @@ const FAQ = () => {
             )}
           </div>
           {show === "one" && (
-            <p className="mt-9 me-9 faq-box-description lg:text-lg">
+            <p className="mt-9 me-8 faq-box-description lg:text-lg text-[10px]">
               INFINE IT SOLUTION is a software development company who develop
               softwares from scratch to comprehensive product. We are a team of
               talented people with both deep knowledge and strong skills in
@@ -40,9 +43,9 @@ const FAQ = () => {
           )}
         </div>
 
-        <div className="faq-box p-10">
+        <div className="faq-box lg:px-10 lg:py-8 p-4">
           <div className="flex justify-between">
-            <h2 className="faq-box-title lg:text-2xl">
+            <h2 className="faq-box-title lg:text-2xl text-xs">
               WHAT technologies do you use ?
             </h2>
             {show === "two" ? (
@@ -55,7 +58,7 @@ const FAQ = () => {
             )}
           </div>
           {show === "two" && (
-            <p className="mt-9 me-9 faq-box-description">
+            <p className="mt-9 me-8 faq-box-description lg:text-lg text-[10px]">
               INFINE IT SOLUTION is a software development company who develop
               softwares from scratch to comprehensive product. We are a team of
               talented people with both deep knowledge and strong skills in
@@ -65,9 +68,9 @@ const FAQ = () => {
           )}
         </div>
 
-        <div className="faq-box p-10">
+        <div className="faq-box lg:px-10 lg:py-8 p-4">
           <div className="flex justify-between">
-            <h2 className="faq-box-title lg:text-2xl">
+            <h2 className="faq-box-title lg:text-2xl text-xs">
               What details should I provide in a project specification ?
             </h2>
             {show === "three" ? (
@@ -80,7 +83,7 @@ const FAQ = () => {
             )}
           </div>
           {show === "three" && (
-            <p className="mt-9 me-9 faq-box-description">
+            <p className="mt-9 me-8 faq-box-description lg:text-lg text-[10px]">
               INFINE IT SOLUTION is a software development company who develop
               softwares from scratch to comprehensive product. We are a team of
               talented people with both deep knowledge and strong skills in
@@ -90,10 +93,10 @@ const FAQ = () => {
           )}
         </div>
 
-        <div className="faq-box p-10">
+        <div className="faq-box lg:px-10 lg:py-8 p-4">
           <div className="flex justify-between">
-            <h2 className="faq-box-title lg:text-2xl">
-              What will happen after first contact
+            <h2 className="faq-box-title lg:text-2xl text-xs">
+              What will happen after first contact?
             </h2>
             {show === "four" ? (
               <FaMinus />
@@ -105,7 +108,7 @@ const FAQ = () => {
             )}
           </div>
           {show === "four" && (
-            <p className="mt-9 me-9 faq-box-description">
+            <p className="mt-9 me-8 faq-box-description lg:text-lg text-[10px]">
               INFINE IT SOLUTION is a software development company who develop
               softwares from scratch to comprehensive product. We are a team of
               talented people with both deep knowledge and strong skills in
@@ -115,9 +118,9 @@ const FAQ = () => {
           )}
         </div>
 
-        <div className="faq-box p-10">
+        <div className="faq-box lg:px-10 lg:py-8 p-4">
           <div className="flex justify-between">
-            <h2 className="faq-box-title lg:text-2xl">
+            <h2 className="faq-box-title lg:text-2xl text-xs">
               We have an idea for a product. What should we do next ?
             </h2>
             {show === "five" ? (
@@ -130,7 +133,7 @@ const FAQ = () => {
             )}
           </div>
           {show === "five" && (
-            <p className="mt-9 me-9 faq-box-description">
+            <p className="mt-9 me-8 faq-box-description lg:text-lg text-[10px]">
               INFINE IT SOLUTION is a software development company who develop
               softwares from scratch to comprehensive product. We are a team of
               talented people with both deep knowledge and strong skills in
