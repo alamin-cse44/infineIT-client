@@ -1,11 +1,12 @@
 import React from "react";
 import Navbar from "./Navbar";
-import "./Navbar.scss";
+import Clients from "./Clients";
 
 const Header = () => {
   return (
     <div className="">
       <Navbar></Navbar>
+      <Clients />
     </div>
   );
 };

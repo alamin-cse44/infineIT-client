@@ -9,7 +9,7 @@ import WorkPlan from "./work-plan/WorkPlan";
 const Home = () => {
   return (
     <div>
-      {/* <Header></Header> */}
+      <Header></Header>
       <div className="lg:mx-[80px]">
         <Services />
         <WorkPlan />
