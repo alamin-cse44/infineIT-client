@@ -22,7 +22,7 @@ const fans = [
 
 const Clients = () => {
   return (
-    <div className="lg:mx-[270px] mx-5 lg:-mt-[150px] -mt-6">
+    <div className="lg:mx-[270px] mx-5 lg:-mt-[150px] -mt-6" id="client">
       <div className="flex items-center justify-between">
         <h2>
           <span className="lg:text-6xl text-lg text-[#0D71BA] uppercase top-heading">

@@ -9,7 +9,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="header">
+    <div className="header" id="home">
       <nav>
         <Link to="/" className="title">
           <img className="lg:w-[175px] w-[92px]" src={logo} alt="" />
@@ -19,19 +19,19 @@ const Navbar = () => {
         </button>
         <ul className={menuOpen ? "open" : ""}>
           <li>
-            <NavLink to="/about">Home</NavLink>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink to="/about">Client</NavLink>
+            <NavLink to="/client">Client</NavLink>
           </li>
           <li>
             <NavLink to="/services">Services</NavLink>
           </li>
           <li>
-            <NavLink to="/services">Work</NavLink>
+            <NavLink to="/work">Work</NavLink>
           </li>
           <li>
-            <NavLink to="/services">Team</NavLink>
+            <NavLink to="/team">Team</NavLink>
           </li>
           <li>
             <NavLink to="/contact">Contact</NavLink>

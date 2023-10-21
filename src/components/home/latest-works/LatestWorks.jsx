@@ -2,7 +2,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 
 import latestWork from "../../../assets/images/latestWork.svg";
 import slider1 from "../../../assets/images/slider1.svg";
@@ -30,7 +30,7 @@ const LatestWorks = () => {
           pagination={{
             clickable: true,
           }}
-          modules={[Pagination]}
+          modules={[Pagination, Autoplay]}
           className="mySwiper mt-20"
         >
           <SwiperSlide
