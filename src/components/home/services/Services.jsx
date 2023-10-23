@@ -6,7 +6,7 @@ import ServicesShow from "./ServicesShow";
 
 const Services = () => {
   return (
-    <div className="mx-2 mt-20">
+    <div className="mx-2 pt-20" id="services">
       <div className="hero min-h-screen">
         <div className="hero-content flex-col lg:flex-row">
           <img src={illustrationImg} className="w-[900px]" alt="" />

@@ -11,7 +11,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="lg:mx-[140px] mx-5 lg:mt-[170px]">
+    <div className="lg:mx-[140px] mx-5 lg:mt-[170px] pt-20" id="faq">
       <Headings
         heading="FREQUENTLY ASKED QUESTIONS"
         blurHeading="FREQUENTLY ASKED QUESTIONS"

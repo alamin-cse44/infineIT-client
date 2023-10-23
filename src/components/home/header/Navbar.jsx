@@ -1,49 +1,87 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import logo from "../../../assets/icons/logo.svg";
 import menuIcon from "../../../assets/icons/menu.svg";
 
 import "./Navbar.scss";
-import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  // Add an event listener to detect scrolling
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener on unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <div className="header" id="home">
-      <nav>
-        <Link to="/" className="title">
-          <img className="lg:w-[175px] w-[92px]" src={logo} alt="" />
-        </Link>
-        <button className="menu -mt-2" onClick={() => setMenuOpen(!menuOpen)}>
-          <img src={menuIcon} alt="" />
-        </button>
-        <ul className={menuOpen ? "open" : ""}>
-          <li>
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li>
-            <NavLink to="/client">Client</NavLink>
-          </li>
-          <li>
-            <NavLink to="/services">Services</NavLink>
-          </li>
-          <li>
-            <NavLink to="/work">Work</NavLink>
-          </li>
-          <li>
-            <NavLink to="/team">Team</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">Contact</NavLink>
-          </li>
-        </ul>
+    <div>
+      <nav
+        className={`navbar ${scrolling ? "scrolling" : ""} ${
+          isMobileMenuOpen ? "open" : ""
+        }`}
+      >
+        <div className="container lg:mx-[100px] mx-2 my-5 ">
+          <img src={logo} className="lg:w-[175px] w-[92px]" alt="" />
+
+          {/* Mobile Menu Icon */}
+          <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
+            <img
+              className={`bar ${isMobileMenuOpen ? "open" : ""}`}
+              src={menuIcon}
+              alt=""
+            />
+          </div>
+
+          {/* Navigation Items */}
+          <ul
+            className={`nav-links lg:gap-12 gap-4 ${
+              isMobileMenuOpen ? "open" : ""
+            }`}
+          >
+            <li>
+              <a className="lg:hover:after:w-[100%] hover:after:w-[20%]" href="#">Home</a>
+            </li>
+            <li>
+              <a className="lg:hover:after:w-[100%] hover:after:w-[20%]" href="#client">Client</a>
+            </li>
+            <li>
+              <a className="lg:hover:after:w-[100%] hover:after:w-[20%]" href="#services">Services</a>
+            </li>
+            <li>
+              <a className="lg:hover:after:w-[100%] hover:after:w-[20%]" href="#work">Work</a>
+            </li>
+            <li>
+              <a className="lg:hover:after:w-[100%] hover:after:w-[20%]" href="#faq">Faq</a>
+            </li>
+            <li>
+              <a className="lg:hover:after:w-[100%] hover:after:w-[20%]" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-      {!menuOpen && <div className="header-text lg:ms-16 ms-5 lg:mt-[110px] mt-8 lg:w-[600px] w-[280px]">
-        <h2 className="header-title">
+      <div className="poster">
+        <p className="poster-title lg:ms-[106px] ms-4 lg:pt-[180px] pt-20 w-[300px] lg:w-[550px]">
           Discover Limitless Possibilities with Our Innovative Software
           Solutions.
-        </h2>
-      </div>}
+        </p>
+      </div>
     </div>
   );
 };

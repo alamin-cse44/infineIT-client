@@ -9,7 +9,7 @@ import "./Contact.scss";
 
 const Contact = () => {
   return (
-    <div className="mx-5 mt-[71px]">
+    <div className="mx-5 pt-[71px]" id="contact">
       <Headings heading="Let’s Have a Coffe" blurHeading="CONTACT" />
       <div className="hero min-h-screen">
         <div className="hero-content flex-col mt-12 gap-[50px] lg:flex-row-reverse">
