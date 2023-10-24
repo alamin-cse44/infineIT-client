@@ -3,6 +3,7 @@ import {
   } from "react-router-dom";
 import Main from "../layout/Main";
 import Home from "../components/home/Home";
+import Api from "../components/api/Api";
 
 
   export const router = createBrowserRouter([
@@ -13,6 +14,10 @@ import Home from "../components/home/Home";
         {
             path: '/',
             element: <Home></Home>
+        },
+        {
+          path: '/api',
+          element: <Api />
         }
       ]
     },

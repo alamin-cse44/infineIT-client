@@ -1,17 +1,19 @@
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes/Routes";
+
 import "./App.css";
+import { createContext } from "react";
+
+export const InfineContext = createContext("context api");
+const test = "test title";
 
 function App() {
   return (
-    <div>
-      <p className="text-2xl">Tailwind</p>
-      <button className="btn">Button</button>
-      <button className="btn btn-neutral">Neutral</button>
-      <button className="btn btn-primary">Primary</button>
-      <button className="btn btn-secondary">Secondary</button>
-      <button className="btn btn-accent">Accent</button>
-      <button className="btn btn-ghost">Ghost</button>
-      <button className="btn btn-link">Link</button>
-    </div>
+    <InfineContext.Provider value={[test]}>
+      <div>
+        <RouterProvider router={router} />
+      </div>
+    </InfineContext.Provider>
   );
 }
 
