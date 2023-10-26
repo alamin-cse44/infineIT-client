@@ -81,7 +81,7 @@ const Navbar = () => {
         </div>
       </nav>
       <div className="poster">
-        <p className="poster-title lg:ms-[106px] ms-4 lg:pt-[180px] pt-20 w-[300px] lg:w-[550px]">
+        <p className="poster-title lg:ms-[106px] ms-4 lg:pt-[180px] pt-20 w-[80%] lg:w-[50%]">
           Discover Limitless Possibilities with Our Innovative Software
           Solutions.
         </p>
