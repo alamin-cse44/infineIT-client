@@ -5,9 +5,29 @@ import emailIcon from "../../../assets/icons/emailIcon.svg";
 
 import Headings from "../../../common/Headings";
 
+import { useForm, ValidationError } from "@formspree/react";
+
+
 import "./Contact.scss";
+import Swal from "sweetalert2";
 
 const Contact = () => {
+  const [state, handleSubmit] = useForm("xgejdpoq");
+  if (state.succeeded) {
+    return (
+      <h2 className="text-lg font-bold text-red-800">
+        Thank you for signing up!
+      </h2>
+      // Swal.fire({
+      //   position: 'top-end',
+      //   icon: 'success',
+      //   title: 'Your Form has been sent',
+      //   showConfirmButton: false,
+      //   timer: 1500
+      // })
+    );
+  }
+
   return (
     <div className="mx-5 pt-[71px]" id="contact">
       <Headings heading="Let’s Have a Coffe" blurHeading="CONTACT" />
@@ -16,7 +36,7 @@ const Contact = () => {
           <img src={contactImg} className="w-[560px]" />
 
           <div className="card lg:w-[600px]">
-            <form className="card-body">
+            <form onSubmit={handleSubmit} className="card-body">
               <h1 className="card-form-title lg:text-4xl">
                 LET'S HAVE A COFFEE
               </h1>
@@ -28,7 +48,13 @@ const Contact = () => {
                 </label>
                 <div className="flex gap-2 card-name-field">
                   <img src={nameIcon} alt="" />
-                  <input type="name" placeholder="Full Name" required />
+                  <input
+                    id="name"
+                    type="name"
+                    name="name"
+                    placeholder="Full Name"
+                    required
+                  />
                 </div>
               </div>
 
@@ -39,7 +65,13 @@ const Contact = () => {
                   </label>
                   <div className="flex gap-2 card-name-field">
                     <img src={phoneIcon} alt="" />
-                    <input type="name" placeholder="Phone" required />
+                    <input
+                      id="phone"
+                      type="number"
+                      name="phone"
+                      placeholder="Phone"
+                      required
+                    />
                   </div>
                 </div>
 
@@ -49,7 +81,13 @@ const Contact = () => {
                   </label>
                   <div className="flex gap-2 card-name-field">
                     <img src={emailIcon} alt="" />
-                    <input type="email" placeholder="Email" required />
+                    <input
+                      id="email"
+                      type="email"
+                      name="email"
+                      placeholder="Email"
+                      required
+                    />
                   </div>
                 </div>
               </div>
@@ -61,9 +99,10 @@ const Contact = () => {
                 <div className="flex lg:gap-5 gap-2 mt-3">
                   <div className="flex items-center gap-2">
                     <input
+                      id="website"
                       type="checkbox"
-                      checked=""
-                      className="card-checkbox"
+                      name="website"
+                      className="lg:w-4 w-2.5"
                     />
                     <span className="card-checkbox-text lg:text-sm text-[10px]">
                       Website
@@ -71,9 +110,10 @@ const Contact = () => {
                   </div>
                   <div className="flex gap-2">
                     <input
+                      id="mobile-app"
                       type="checkbox"
-                      checked=""
-                      className="card-checkbox"
+                      name="mobile-app"
+                      className="lg:w-4 w-2.5"
                     />
                     <span className="card-checkbox-text lg:text-sm text-[10px]">
                       Mobile App
@@ -81,9 +121,10 @@ const Contact = () => {
                   </div>
                   <div className="flex gap-2">
                     <input
+                      id="design"
                       type="checkbox"
-                      checked=""
-                      className="card-checkbox"
+                      name="design"
+                      className="lg:w-4 w-2.5"
                     />
                     <span className="card-checkbox-text lg:text-sm text-[10px]">
                       Design
@@ -91,9 +132,10 @@ const Contact = () => {
                   </div>
                   <div className="flex gap-2">
                     <input
+                      id="others"
                       type="checkbox"
-                      checked=""
-                      className="card-checkbox"
+                      name="others"
+                      className="lg:w-4 w-2.5"
                     />
                     <span className="card-checkbox-text lg:text-sm text-[10px]">
                       Others
@@ -126,7 +168,13 @@ const Contact = () => {
               </div>
 
               <div className="form-control mt-6">
-                <button className="card-btn py-3">send</button>
+                <button
+                  type="submit"
+                  disabled={state.submitting}
+                  className="card-btn py-3"
+                >
+                  send
+                </button>
               </div>
             </form>
           </div>
