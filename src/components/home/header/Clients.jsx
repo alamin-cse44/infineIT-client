@@ -8,6 +8,8 @@ import fan7 from "../../../assets/images/fan7.svg";
 import fan8 from "../../../assets/images/fan8.svg";
 import fan9 from "../../../assets/images/fan9.svg";
 
+import './Clients.scss'
+
 const fans = [
   { id: 1, img: fan1 },
   { id: 2, img: fan2 },
@@ -22,27 +24,27 @@ const fans = [
 
 const Clients = () => {
   return (
-    <div className="lg:mx-[270px] mx-5 lg:-mt-[150px] -mt-6" id="client">
+    <div className="client lg:mx-[270px] mx-5 lg:-mt-[150px] -mt-6" id="client">
       <div className="flex items-center justify-between">
         <h2>
-          <span className="lg:text-6xl text-lg text-[#0D71BA] uppercase top-heading">
+          <span className="client-title lg:text-6xl text-2xl">
             Our Customers
           </span>
           <br />
-          <span className="lg:text-4xl text-base uppercase text-[#000] top-heading">
+          <span className="client-subTitle lg:text-4xl text-base">
             are our biggest fans
           </span>
         </h2>
         <h2>
-          <span className="lg:text-6xl text-lg text-[#0D71BA] uppercase top-heading">
+          <span className="client-title lg:text-6xl text-2xl">
             45+
           </span>{" "}
-          <span className="lg:text-4xl text-base text-[#0D71BA] uppercase ">
+          <span className="client-text lg:text-4xl text-base">
             Clients
           </span>
         </h2>
       </div>
-      <div className="flex flex-wrap gap-7 items-center justify-center mt-4 top-heading">
+      <div className="flex flex-wrap gap-7 items-center justify-center mt-4 ">
         {fans.map((fan) => (
           <div>
             <img src={fan.img} alt="" />
