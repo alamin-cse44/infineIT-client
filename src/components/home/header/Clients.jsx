@@ -47,7 +47,7 @@ const Clients = () => {
       <div className="flex flex-wrap gap-7 items-center justify-center mt-4 ">
         {fans.map((fan) => (
           <div>
-            <img src={fan.img} alt="" />
+            <img className="lg:w-[120px] w-[60px]" src={fan.img} alt="" />
           </div>
         ))}
       </div>
