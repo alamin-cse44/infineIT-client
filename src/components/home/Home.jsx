@@ -17,7 +17,7 @@ const Home = () => {
         <FAQ />
         <Contact />
       </div>
-      <div className="divider lg:mt-[430px]"></div>
+      <div className="divider lg:mt-12"></div>
       <div>
         <Footer />
       </div>

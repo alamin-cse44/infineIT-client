@@ -8,11 +8,20 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+#root {
+  color-scheme: only light;
+} 
+
+/* body, input, textarea{
+  background-color: #fff;
+} */
+body { 
+  background-image: linear-gradient(#ffffff, #ffffff); 
+  background-color: #000000;
+}
+
 html{
   scroll-behavior: smooth;
-}
-body{
-  background-color: #fff !important;
 }
 h1, h2, h3, h4, h5, h6, p{
   margin: 0;

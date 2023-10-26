@@ -8,7 +8,7 @@ import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <div className="lg:mx-[140px] my-16 mx-5">
+    <div className="lg:mx-[140px] mt-16 mx-5">
       <div className="lg:flex gap-[140px]">
         <div className="w-[260px] mb-6">
           <img src={logo} alt="" />
@@ -43,7 +43,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="infine-it mb-6">
+          <div className="infine-it mb-10">
             <h2>Contact</h2>
             <div className="mt-6">
               <a href="">support@infineitsolution.com</a>
