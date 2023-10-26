@@ -20,77 +20,46 @@ const LatestWorks = () => {
         heading="SOME OF OUR LATEST WORKS"
         blurHeading="SOME OF OUR LATEST WORKS"
       />
-      <div className="lg:hidden display-img">
+      {/* <div className="lg:hidden display-img">
         <img src={latestWork} alt="" />
-      </div>
-      <div className="display-slide hidden lg:block">
+      </div> */}
+      <div className="display-slide block">
         <Swiper
-          slidesPerView={3.5}
+          slidesPerView={1.5}
           spaceBetween={30}
           pagination={{
             clickable: true,
           }}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 3.5,
+              spaceBetween: 50,
+            },
+          }}
           modules={[Pagination, Autoplay]}
           className="mySwiper mt-20"
         >
-          <SwiperSlide
-            style={
-              {
-                // height: "550px",
-                // bgcolor: "#202327",
-                // display: "flex",
-                // justifyContent: "center",
-              }
-            }
-          >
+          <SwiperSlide>
             <img src={slider1} alt="" />
           </SwiperSlide>
-          <SwiperSlide
-            style={
-              {
-                // height: "550px",
-                // bgcolor: "#202327",
-                // display: "flex",
-                // justifyContent: "center",
-              }
-            }
-          >
+          <SwiperSlide>
             <img src={slider2} alt="" />
           </SwiperSlide>
-          <SwiperSlide
-            style={
-              {
-                // height: "550px",
-                // bgcolor: "#202327",
-                // display: "flex",
-                // justifyContent: "center",
-              }
-            }
-          >
+          <SwiperSlide>
             <img src={slider3} alt="" />
           </SwiperSlide>
-          <SwiperSlide
-            style={
-              {
-                // height: "550px",
-                // bgcolor: "#202327",
-                // display: "flex",
-                // justifyContent: "center",
-              }
-            }
-          >
+          <SwiperSlide>
             <img src={slider1} alt="" />
           </SwiperSlide>
-          <SwiperSlide
-            style={
-              {
-                // height: "550px",
-                // bgcolor: "#202327",
-                // display: "flex",
-                // justifyContent: "center",
-              }
-            }
-          >
+          <SwiperSlide>
             <img src={slider2} alt="" />
           </SwiperSlide>
         </Swiper>
