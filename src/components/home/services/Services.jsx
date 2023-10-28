@@ -9,9 +9,11 @@ const Services = () => {
     <div className="mx-2 pt-20" id="services">
       <div className="hero min-h-screen">
         <div className="hero-content flex-col lg:flex-row">
-          <img src={illustrationImg} className="w-[900px]" alt="" />
+          <img src={illustrationImg} className="w-[750px]" alt="" />
           <div>
-            <h1 className="lg:text-6xl text-3xl text-center uppercase font-bold mb-10 text-[#0D71BA]">What We Do?</h1>
+            <h1 className="lg:text-5xl text-3xl text-center uppercase font-bold mb-10 text-[#0D71BA] font-['Bebas Neue']" style={{fontFamily: "Bevas Neue"}}>
+              What We Do?
+            </h1>
             <ServicesShow
               img={mobileAppIcon}
               title="Mobile Application"
