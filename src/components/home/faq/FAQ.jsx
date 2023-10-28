@@ -22,7 +22,7 @@ const FAQ = () => {
         <div className="faq-box lg:px-10 lg:py-8 p-4">
           <div className="flex justify-between">
             <h2
-              className="faq-box-title lg:text-2xl text-sm cursor-pointer"
+              className="faq-box-title lg:text-2xl text-base cursor-pointer"
               onClick={() => handleDisplay("one")}
             >
               WHO is Infine it Solution ?
@@ -53,7 +53,7 @@ const FAQ = () => {
         <div className="faq-box lg:px-10 lg:py-8 p-4">
           <div className="flex justify-between">
             <h2
-              className="faq-box-title lg:text-2xl text-sm cursor-pointer"
+              className="faq-box-title lg:text-2xl text-base cursor-pointer"
               onClick={() => handleDisplay("two")}
             >
               WHAT technologies do you use ?
@@ -84,7 +84,7 @@ const FAQ = () => {
         <div className="faq-box lg:px-10 lg:py-8 p-4">
           <div className="flex justify-between">
             <h2
-              className="faq-box-title lg:text-2xl text-sm cursor-pointer"
+              className="faq-box-title lg:text-2xl text-base cursor-pointer"
               onClick={() => handleDisplay("three")}
             >
               What details should I provide in a project specification ?
@@ -115,7 +115,7 @@ const FAQ = () => {
         <div className="faq-box lg:px-10 lg:py-8 p-4">
           <div className="flex justify-between">
             <h2
-              className="faq-box-title lg:text-2xl text-sm cursor-pointer"
+              className="faq-box-title lg:text-2xl text-base cursor-pointer"
               onClick={() => handleDisplay("four")}
             >
               What will happen after first contact?
@@ -146,7 +146,7 @@ const FAQ = () => {
         <div className="faq-box lg:px-10 lg:py-8 p-4">
           <div className="flex justify-between">
             <h2
-              className="faq-box-title lg:text-2xl text-sm cursor-pointer"
+              className="faq-box-title lg:text-2xl text-base cursor-pointer"
               onClick={() => handleDisplay("five")}
             >
               We have an idea for a product. What should we do next ?

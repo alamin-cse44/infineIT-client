@@ -4,6 +4,8 @@ import webAppIcon from "../../../assets/icons/webAppIcon.svg";
 import uiDesignIcon from "../../../assets/icons/uiDesignIcon.svg";
 import ServicesShow from "./ServicesShow";
 
+import './Services.scss';
+
 const Services = () => {
   return (
     <div className="mx-2 pt-20" id="services">
@@ -11,7 +13,7 @@ const Services = () => {
         <div className="hero-content flex-col lg:flex-row">
           <img src={illustrationImg} className="w-[750px]" alt="" />
           <div>
-            <h1 className="lg:text-5xl text-3xl text-center uppercase font-bold mb-10 text-[#0D71BA] font-['Bebas Neue']" style={{fontFamily: "Bevas Neue"}}>
+            <h1 className="lg:text-6xl text-3xl text-center uppercase  mb-10 services-topHeading">
               What We Do?
             </h1>
             <ServicesShow

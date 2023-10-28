@@ -42,7 +42,7 @@ const Contact = () => {
               </h1>
               <div className="form-control">
                 <label className="label mt-5">
-                  <span className="label-text lg:text-lg text-xs">
+                  <span className="label-text lg:text-lg text-sm">
                     full name
                   </span>
                 </label>
@@ -61,7 +61,7 @@ const Contact = () => {
               <div className="flex items-center lg:gap-7 gap-4 mt-5">
                 <div className="form-control">
                   <label className="label">
-                    <span className="lg:text-lg text-[10px]">Phone Number</span>
+                    <span className="lg:text-lg text-sm">Phone Number</span>
                   </label>
                   <div className="flex gap-2 card-name-field">
                     <img src={phoneIcon} alt="" />
@@ -77,7 +77,7 @@ const Contact = () => {
 
                 <div className="form-control">
                   <label className="label">
-                    <span className="lg:text-lg text-[10px]">Email</span>
+                    <span className="lg:text-lg text-sm">Email</span>
                   </label>
                   <div className="flex gap-2 card-name-field">
                     <img src={emailIcon} alt="" />
@@ -94,7 +94,7 @@ const Contact = () => {
 
               <div className="form-control">
                 <label className="label mt-5">
-                  <span className="lg:text-lg text-xs">select option</span>
+                  <span className="lg:text-lg text-sm">select option</span>
                 </label>
                 <div className="flex lg:gap-5 gap-2 mt-3">
                   <div className="flex items-center gap-2">
@@ -146,7 +146,7 @@ const Contact = () => {
 
               <div className="form-control mt-5">
                 <label className="label">
-                  <span className="lg:text-lg text-xs">Subject</span>
+                  <span className="lg:text-lg text-sm">Subject</span>
                 </label>
                 <div className="flex gap-2 card-name-field">
                   <input type="name" placeholder="Subject" required />
@@ -155,7 +155,7 @@ const Contact = () => {
 
               <div className="form-control mt-5">
                 <label className="label">
-                  <span className="lg:text-lg text-xs">Enter your message</span>
+                  <span className="lg:text-lg text-sm">Enter your message</span>
                 </label>
                 <div className="flex gap-2 card-name-field">
                   <textarea
