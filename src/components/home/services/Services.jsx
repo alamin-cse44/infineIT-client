@@ -8,12 +8,17 @@ import { useContext } from "react";
 import { InfineContext, PostContext } from "../../../App";
 
 import "./Services.scss";
+import Query from "../../../hooks/Query";
 
 const Services = () => {
   const [users] = useContext(InfineContext);
   const [posts] = useContext(PostContext);
+  const [allPost] = Query();
+
   console.log("User show in Service section : ", users.length);
   console.log("Total posts in Service section : ", posts.length);
+  console.log("TanStack query posts : ", allPost.length);
+
   return (
     <div className="mx-2 pt-20" id="services">
       <div className="hero min-h-screen">
