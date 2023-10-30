@@ -3,6 +3,7 @@ import logo from "../../../assets/icons/logo.svg";
 import menuIcon from "../../../assets/icons/menu.svg";
 
 import "./Navbar.scss";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -72,6 +73,9 @@ const Navbar = () => {
             </li>
             <li>
               <a className="lg:hover:after:w-[100%] hover:after:w-[20%]" href="#contact">Contact</a>
+            </li>
+            <li>
+              <Link to='api' className="lg:hover:after:w-[100%] hover:after:w-[20%]">Context Api</Link>
             </li>
           </ul>
         </div>

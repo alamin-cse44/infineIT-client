@@ -4,9 +4,16 @@ import webAppIcon from "../../../assets/icons/webAppIcon.svg";
 import uiDesignIcon from "../../../assets/icons/uiDesignIcon.svg";
 import ServicesShow from "./ServicesShow";
 
-import './Services.scss';
+import { useContext } from "react";
+import { InfineContext, PostContext } from "../../../App";
+
+import "./Services.scss";
 
 const Services = () => {
+  const [users] = useContext(InfineContext);
+  const [posts] = useContext(PostContext);
+  console.log("User show in Service section : ", users.length);
+  console.log("Total posts in Service section : ", posts.length);
   return (
     <div className="mx-2 pt-20" id="services">
       <div className="hero min-h-screen">
