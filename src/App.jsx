@@ -22,7 +22,7 @@ function App() {
       .then((res) => res.json())
       .then((data) => {
         setUsers(data);
-        console.log(data[0].address.street);
+        console.log("users ",data);
       });
   }, []);
   return (

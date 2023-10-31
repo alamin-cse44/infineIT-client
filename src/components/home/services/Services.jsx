@@ -16,8 +16,8 @@ const Services = () => {
   const [allPost] = Query();
 
   console.log("User show in Service section : ", users.length);
-  console.log("Total posts in Service section : ", posts.length);
-  console.log("TanStack query posts : ", allPost.length);
+  // console.log("Total posts in Service section : ", posts.length);
+  // console.log("TanStack query posts : ", allPost.length);
 
   return (
     <div className="mx-2 pt-20" id="services">

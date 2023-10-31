@@ -12,7 +12,7 @@ const Api = () => {
       .then((res) => res.json())
       .then((data) => {
         setPosts(data);
-        console.log(data);
+        // console.log(data);
       });
   }, []);
 
